@@ -1,0 +1,68 @@
+name: IceCloudLogin
+version: 0.5.1
+main: com.icecloud.login.IceCloudLogin
+author: ya_xzer21145
+description: A Spigot/Paper login plugin with captcha, email and QQ binding
+api-version: 1.20
+
+commands:
+  login:
+    description: Login to the server
+    usage: /login <password>
+    aliases: [l]
+  register:
+    description: Register a new account
+    usage: /register <password> <confirmPassword>
+    aliases: [reg]
+  captcha:
+    description: Verify captcha before registration
+    usage: /captcha <code>
+  mail:
+    description: Bind email address
+    usage: /mail <email>
+  mailc:
+    description: Verify email with code
+    usage: /mailc <code>
+  qq:
+    description: Bind QQ number
+    usage: /qq <qq_number>
+  qqc:
+    description: Verify QQ with code
+    usage: /qqc <code>
+  logout:
+    description: Logout from the server
+    usage: /logout
+  regdel:
+    description: Delete player registration (Admin only)
+    usage: /regdel <player>
+    permission: icecloudlogin.admin
+  mailzhpass:
+    description: Reset password via email
+    usage: /mailzhpass
+  qqzhpass:
+    description: Reset password via QQ
+    usage: /qqzhpass
+  changepass:
+    description: Change password
+    usage: /changepass <old password> <new password>
+    aliases: [cpss, changepassword]
+  changemail:
+    description: Change email
+    usage: /changemail <old email> <new email>
+    aliases: [cmail]
+  changeqq:
+    description: Change QQ
+    usage: /changeqq <old QQ> <new QQ>
+    aliases: [cq]
+  icecloudlogin:
+    description: Main command for IceCloudLogin
+    usage: /icecloudlogin [help|reload|version]
+
+permissions:
+  icecloudlogin.*:
+    description: All permissions
+    children:
+      icecloudlogin.admin: true
+  icecloudlogin.admin:
+    description: Admin permissions
+    default: op

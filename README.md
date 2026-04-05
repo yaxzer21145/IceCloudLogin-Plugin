@@ -1,5 +1,4 @@
-# IceCloudLogin-Plugin
-MinecraftJavaPlugin-IceCloud插件
+# IceCloudLogin 插件介绍
 
 ## 概述
 
@@ -365,6 +364,16 @@ A: 支持 Spigot/Paper 1.20+ 版本
 
 ### Q: 数据存储在哪里？
 A: 默认使用SQLite，数据文件在 `plugins/IceCloudLogin/data.db`
+
+---
+
+## 更新日志
+
+### v0.5.1
+- 插件重命名为 IceCloudLogin
+- 修复帮助命令颜色代码问题
+- 优化代码结构
+- 更新包名和类名
 
 ---
 

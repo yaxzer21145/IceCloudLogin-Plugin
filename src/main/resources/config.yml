@@ -1,0 +1,88 @@
+# IceCloudLogin Configuration File
+
+# Database settings
+database:
+  type: sqlite
+  sqlite:
+    path: "plugins/IceCloudLogin/data.db"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "icecloudlogin"
+    username: "root"
+    password: "password"
+
+# Login settings
+login:
+  timeout: 120
+  auto-login-duration: 7200
+  max-wrong-password: 5
+  max-kick-count: 3
+  kick-commands:
+    - "ban {player} 多次登录失败"
+
+# Registration settings
+registration:
+  timeout: 120
+  max-password-length: 32
+  min-password-length: 6
+  password-pattern: "^[a-zA-Z0-9_-]{6,32}$"
+
+# Captcha settings
+captcha:
+  length: 6
+  validity-time: 300
+
+# Email settings
+email:
+  enabled: true
+  host: "smtp.qq.com"
+  port: 587
+  username: "your-email@qq.com"
+  password: "your-email-password"
+  from: "IceCloudLogin <your-email@qq.com>"
+  ssl: false
+  tls: true
+  code-validity: 300
+  cooldown: 60
+
+# QQ settings
+qq:
+  enabled: true
+  use-email: true
+  email-domain: "qq.com"
+  code-validity: 300
+  cooldown: 60
+
+# Title settings
+title:
+  update-interval: 20
+  captcha:
+    enabled: true
+    title: "&6请输入验证码"
+    subtitle: "&e使用 /captcha <验证码>"
+  register:
+    enabled: true
+    title: "&6请注册"
+    subtitle: "&e使用 /register <密码> <重复密码>"
+  login:
+    enabled: true
+    title: "&6请登录"
+    subtitle: "&e使用 /login <密码>"
+  login-success:
+    enabled: true
+    title: "&a登录成功"
+    subtitle: "&e欢迎回来！"
+    duration: 3
+  register-success:
+    enabled: true
+    title: "&a注册成功"
+    subtitle: "&e欢迎加入服务器！"
+    duration: 3
+
+# Actionbar settings
+actionbar:
+  enabled: true
+  captcha: "&e请在 {time} 秒内输入验证码！"
+  register: "&e请在 {time} 秒内完成注册！"
+  login: "&e请在 {time} 秒内完成登录！"

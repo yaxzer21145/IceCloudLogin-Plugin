@@ -1,0 +1,165 @@
+# IceCloudLogin 消息配置文件
+# 支持颜色代码: &0-&f, &k-&r
+
+# 前缀
+prefix: "&6[IceCloudLogin] &r"
+
+# 登录相关消息
+login:
+  success: "&a登录成功！"
+  wrong-password: "&c密码错误！还有 {remaining} 次机会！"
+  not-registered: "&c您还没有注册，请先注册。"
+  already-logged-in: "&a您已经登录了。"
+  auto-login: "&a自动登录成功！"
+  need-login: "&e请使用 /login <密码> 进行登录。"
+  timeout-kick: "&c登录超时！请在限定时间内完成登录。"
+  max-wrong-kick: "&c密码错误次数过多！"
+  logout-success: "&a已成功登出！请重新登录。"
+
+# 注册相关消息
+register:
+  success: "&a注册成功！已自动登录。"
+  password-mismatch: "&c两次输入的密码不一致！"
+  password-too-short: "&c密码长度不能少于 {min} 位！"
+  password-too-long: "&c密码长度不能超过 {max} 位！"
+  password-invalid: "&c密码只能包含 0-9, A-Z, a-z, -, _！"
+  already-registered: "&c您已经注册过了！"
+  need-captcha: "&e请先使用 /captcha <验证码> 验证验证码！"
+  captcha-wrong: "&c验证码错误！"
+  captcha-expired: "&c验证码已过期！"
+  timeout-kick: "&c注册超时！请在限定时间内完成注册。"
+
+# 验证码相关消息
+captcha:
+  message: "&e请输入验证码: &6{code}"
+  prompt: "&e请使用 /captcha <验证码> 进行验证。"
+  success: "&a验证码验证成功！请使用 /register <密码> <重复密码> 进行注册。"
+
+# 邮箱绑定相关消息
+email:
+  bind-success: "&a邮箱绑定成功！"
+  bind-failed: "&c邮箱绑定失败！"
+  already-bound: "&c该邮箱已经绑定了！"
+  code-sent: "&a验证码已发送到您的邮箱，请在5分钟内完成验证。"
+  code-wrong: "&c验证码错误！"
+  code-expired: "&c验证码已过期！"
+  cooldown: "&c请等待 {time} 秒后再发送验证码。"
+  need-verify: "&e请使用 /mailc <验证码> 验证邮箱。"
+  not-bound: "&c您还没有绑定邮箱！"
+  invalid: "&c请输入有效的邮箱地址。"
+  no-pending: "&c您没有待验证的邮箱绑定请求。"
+
+# QQ绑定相关消息
+qq:
+  bind-success: "&aQQ绑定成功！"
+  bind-failed: "&cQQ绑定失败！"
+  already-bound: "&c该QQ已经绑定了！"
+  code-sent: "&a验证码已发送到您的QQ邮箱，请在5分钟内完成验证。"
+  code-wrong: "&c验证码错误！"
+  code-expired: "&c验证码已过期！"
+  cooldown: "&c请等待 {time} 秒后再发送验证码。"
+  need-verify: "&e请使用 /qqc <验证码> 验证QQ。"
+  not-bound: "&c您还没有绑定QQ！"
+  invalid: "&c请输入有效的QQ号！"
+  no-pending: "&c您没有待验证的QQ绑定请求。"
+
+# 限制提示消息
+restrictions:
+  chat-denied: "&c请先登录后再发送消息！"
+  command-denied: "&c请先登录后再使用指令！"
+  move-denied: "&c请先登录后再移动！"
+  interact-denied: "&c请先登录后再进行交互！"
+  break-denied: "&c请先登录后再破坏方块！"
+  place-denied: "&c请先登录后再放置方块！"
+  damage-denied: "&c请先登录！"
+  inventory-denied: "&c请先登录后再打开背包！"
+
+# 错误消息
+error:
+  database-error: "&c数据库错误，请联系管理员。"
+  email-error: "&c邮件发送失败，请联系管理员。"
+  unknown-error: "&c发生未知错误，请联系管理员。"
+  player-only: "&c此命令只能由玩家执行。"
+  need-login-first: "&c请先完成登录或注册。"
+  no-permission: "&c您没有权限执行此命令！"
+  player-not-found: "&c未找到该玩家！"
+
+# 密码重置相关消息
+password-reset:
+  email-code-sent: "&a验证码已发送到您的绑定邮箱，请在5分钟内完成验证。"
+  qq-code-sent: "&a验证码已发送到您的绑定QQ邮箱，请在5分钟内完成验证。"
+  verify-success: "&a验证成功！请使用 /register <密码> <重复密码> 重新设置密码。"
+  no-binding: "&c您没有绑定{method}，无法使用此功能！"
+  invalid-method: "&c无效的验证方式！"
+
+# 修改密码相关消息
+change-password:
+  success: "&a密码修改成功！请使用新密码重新登录。"
+  wrong-old-password: "&c原密码错误！"
+  same-password: "&c新密码不能与旧密码相同！"
+  need-login: "&c请先登录后再修改密码！"
+
+# 修改邮箱相关消息
+change-email:
+  success: "&a邮箱修改成功！"
+  wrong-old-email: "&c原邮箱错误！"
+  code-sent: "&a验证码已发送到新邮箱，请在5分钟内完成验证。"
+  verify-success: "&a验证成功！邮箱已更改为 {email}"
+  same-email: "&c新邮箱不能与旧邮箱相同！"
+  need-login: "&c请先登录后再修改邮箱！"
+  need-verify-first: "&c请先验证新邮箱！"
+
+# 修改QQ相关消息
+change-qq:
+  success: "&aQQ修改成功！"
+  wrong-old-qq: "&c原QQ号错误！"
+  code-sent: "&a验证码已发送到新QQ邮箱，请在5分钟内完成验证。"
+  verify-success: "&a验证成功！QQ已更改为 {qq}"
+  same-qq: "&c新QQ号不能与旧QQ号相同！"
+  need-login: "&c请先登录后再修改QQ！"
+  need-verify-first: "&c请先验证新QQ！"
+
+# 主指令相关消息
+main-command:
+  help-header: "&6========== IceCloudLogin 帮助 =========="
+  help-footer: "&6========================================="
+  help-login: "&e/login <密码> &7- 登录服务器"
+  help-register: "&e/register <密码> <重复密码> &7- 注册账号"
+  help-captcha: "&e/captcha <验证码> &7- 验证验证码"
+  help-mail: "&e/mail <邮箱> &7- 绑定邮箱"
+  help-mailc: "&e/mailc <验证码> &7- 验证邮箱"
+  help-qq: "&e/qq <QQ号> &7- 绑定QQ"
+  help-qqc: "&e/qqc <验证码> &7- 验证QQ"
+  help-logout: "&e/logout &7- 登出服务器"
+  help-changepass: "&e/changepass <原密码> <新密码> &7- 修改密码"
+  help-changemail: "&e/changemail <原邮箱> <新邮箱> &7- 修改邮箱"
+  help-changeqq: "&e/changeqq <原QQ> <新QQ> &7- 修改QQ"
+  help-mailzhpass: "&e/mailzhpass &7- 通过邮箱重置密码"
+  help-qqzhpass: "&e/qqzhpass &7- 通过QQ重置密码"
+  help-regdel: "&e/regdel <玩家> &7- 删除玩家注册(管理员)"
+  help-reload: "&e/icecloudlogin reload &7- 重载配置(管理员)"
+  help-version: "&e/icecloudlogin version &7- 查看版本"
+  reload-success: "&a配置重载成功！"
+  version: "&6IceCloudLogin &ev{version} &7- 作者: ya_xzer21145"
+
+# 其他消息
+misc:
+  usage-login: "&e用法: /login <密码>"
+  usage-register: "&e用法: /register <密码> <重复密码>"
+  usage-captcha: "&e用法: /captcha <验证码>"
+  usage-mail: "&e用法: /mail <邮箱>"
+  usage-mailc: "&e用法: /mailc <验证码>"
+  usage-qq: "&e用法: /qq <QQ号>"
+  usage-qqc: "&e用法: /qqc <验证码>"
+  usage-logout: "&e用法: /logout"
+  usage-regdel: "&e用法: /regdel <玩家>"
+  usage-mailzhpass: "&e用法: /mailzhpass"
+  usage-qqzhpass: "&e用法: /qqzhpass"
+  usage-changepass: "&e用法: /changepass <原密码> <新密码>"
+  usage-changemail: "&e用法: /changemail <原邮箱> <新邮箱>"
+  usage-changeqq: "&e用法: /changeqq <原QQ> <新QQ>"
+
+# 管理员消息
+admin:
+  regdel-success: "&a已成功删除玩家 {player} 的注册信息！"
+  regdel-failed: "&c删除玩家注册信息失败！"

@@ -1,0 +1,9 @@
+# Welcome message file
+# Support color codes: &0-&f, &k-&r
+# Use {player} for player name
+# Lines starting with # are comments
+
+&6========================================
+&e欢迎 &a{player} &e来到服务器！
+&e祝你游戏愉快！
+&6========================================
